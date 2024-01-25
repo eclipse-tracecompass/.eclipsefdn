@@ -21,6 +21,8 @@ orgs.newOrg('eclipse-tracecompass') {
     },
   },
   _repositories+:: [
+    orgs.newRepo('trace-event-logger') {
+    },
     orgs.newRepo('tracecompass-website') {
       allow_merge_commit: true,
       allow_update_branch: false,
