@@ -14,6 +14,7 @@ orgs.newOrg('eclipse-tracecompass') {
   },
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/tracecompass/github-webhook/') {
+      content_type: "json",
       events+: [
         "pull_request",
         "push"
