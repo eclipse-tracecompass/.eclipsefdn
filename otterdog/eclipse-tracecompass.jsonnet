@@ -12,6 +12,14 @@ orgs.newOrg('eclipse-tracecompass') {
       default_workflow_permissions: "write",
     },
   },
+  webhooks+: [
+    orgs.newOrgWebhook('https://ci.eclipse.org/tracecompass/github-webhook/') {
+      events+: [
+        "pull_request",
+        "push"
+      ],
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('trace-event-logger') {
     },
