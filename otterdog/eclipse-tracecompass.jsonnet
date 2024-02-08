@@ -22,6 +22,18 @@ orgs.newOrg('eclipse-tracecompass') {
     },
   ],
   _repositories+:: [
+    orgs.newRepo('org.eclipse.tracecompass') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      default_branch: "ControlFlowViewTestFix",
+      delete_branch_on_merge: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        enabled: false,
+      },
+    },
     orgs.newRepo('trace-event-logger') {
     },
     orgs.newRepo('tracecompass-test-traces') {
