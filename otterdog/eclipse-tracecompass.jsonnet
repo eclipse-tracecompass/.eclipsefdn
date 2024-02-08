@@ -31,7 +31,7 @@ orgs.newOrg('eclipse-tracecompass') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
-        enabled: false,
+        default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('trace-event-logger') {
@@ -45,7 +45,7 @@ orgs.newOrg('eclipse-tracecompass') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
-        enabled: false,
+        default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('tracecompass-website') {
@@ -57,7 +57,7 @@ orgs.newOrg('eclipse-tracecompass') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
-        enabled: false,
+        default_workflow_permissions: "write",
       },
     },
   ],
