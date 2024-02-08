@@ -25,7 +25,7 @@ orgs.newOrg('eclipse-tracecompass') {
     orgs.newRepo('org.eclipse.tracecompass') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      default_branch: "ControlFlowViewTestFix",
+      default_branch: "master",
       delete_branch_on_merge: false,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
