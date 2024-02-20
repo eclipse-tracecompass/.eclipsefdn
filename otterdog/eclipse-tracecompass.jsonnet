@@ -38,6 +38,13 @@ orgs.newOrg('eclipse-tracecompass') {
       delete_branch_on_merge: false,
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
+      topics+: [
+        "profiling",
+        "trace-compass",
+        "trace",
+        "trace-viewer",
+        "trace-visualization"
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
