@@ -21,6 +21,20 @@ orgs.newOrg('eclipse-tracecompass') {
       default_workflow_permissions: "write",
     },
   },
+  secrets+: [
+    orgs.newOrgSecret('ORG_GPG_PASSPHRASE') {
+      value: "pass:bots/tools.tracecompass/gpg/passphrase",
+    },
+    orgs.newOrgSecret('ORG_GPG_PRIVATE_KEY') {
+      value: "pass:bots/tools.tracecompass/gpg/secret-subkeys.asc",
+    },
+    orgs.newOrgSecret('ORG_OSSRH_PASSWORD') {
+      value: "pass:bots/tools.tracecompass/oss.sonatype.org/gh-token-password",
+    },
+    orgs.newOrgSecret('ORG_OSSRH_USERNAME') {
+      value: "pass:bots/tools.tracecompass/oss.sonatype.org/gh-token-username",
+    },
+  ],  
   webhooks+: [
     orgs.newOrgWebhook('https://ci.eclipse.org/tracecompass/github-webhook/') {
       content_type: "json",
@@ -36,6 +50,8 @@ orgs.newOrg('eclipse-tracecompass') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
+      description: "Eclipse Trace Compass",
+      homepage: "https://eclipse.dev/tracecompass/",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       topics+: [
