@@ -46,7 +46,7 @@ orgs.newOrg('eclipse-tracecompass') {
   ],
   _repositories+:: [
     orgs.newRepo('org.eclipse.tracecompass') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
@@ -70,7 +70,7 @@ orgs.newOrg('eclipse-tracecompass') {
       ],
     },
     orgs.newRepo('trace-event-logger') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "main",
       delete_branch_on_merge: false,
@@ -85,7 +85,7 @@ orgs.newOrg('eclipse-tracecompass') {
       ],
     },
     orgs.newRepo('tracecompass-infra') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
@@ -97,7 +97,7 @@ orgs.newOrg('eclipse-tracecompass') {
       },
     },
     orgs.newRepo('tracecompass-test-traces') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
@@ -112,7 +112,7 @@ orgs.newOrg('eclipse-tracecompass') {
       ],
     },
     orgs.newRepo('tracecompass-website') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
