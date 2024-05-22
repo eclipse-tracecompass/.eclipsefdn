@@ -51,8 +51,6 @@ orgs.newOrg('eclipse-tracecompass') {
       delete_branch_on_merge: false,
       description: "Eclipse Trace Compass",
       homepage: "https://eclipse.dev/tracecompass/",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       topics+: [
         "profiling",
         "trace-compass",
@@ -73,8 +71,6 @@ orgs.newOrg('eclipse-tracecompass') {
       allow_update_branch: false,
       default_branch: "main",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "read",
@@ -88,8 +84,6 @@ orgs.newOrg('eclipse-tracecompass') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
@@ -100,8 +94,6 @@ orgs.newOrg('eclipse-tracecompass') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -115,8 +107,6 @@ orgs.newOrg('eclipse-tracecompass') {
       allow_update_branch: false,
       default_branch: "master",
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
