@@ -11,7 +11,6 @@ local tc_default_branch_protection_rule(pattern) =
 
 orgs.newOrg('eclipse-tracecompass') {
   settings+: {
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
     name: "Eclipse Trace Compass",
     web_commit_signoff_required: false,
