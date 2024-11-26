@@ -65,6 +65,17 @@ orgs.newOrg('eclipse-tracecompass') {
         tc_default_branch_protection_rule('master')
       ],
     },
+    orgs.newRepo('tmll') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
+      delete_branch_on_merge: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('trace-event-logger') {
       allow_merge_commit: false,
       allow_update_branch: false,
