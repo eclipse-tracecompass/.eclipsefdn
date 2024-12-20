@@ -9,7 +9,7 @@ local tc_default_branch_protection_rule(pattern) =
           requires_strict_status_checks: true,
   };
 
-orgs.newOrg('eclipse-tracecompass') {
+orgs.newOrg('tools.tracecompass', 'eclipse-tracecompass') {
   settings+: {
     description: "",
     name: "Eclipse Trace Compass",
