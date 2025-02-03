@@ -54,6 +54,7 @@ orgs.newOrg('tools.tracecompass', 'eclipse-tracecompass') {
         "profiling",
         "trace-compass",
         "trace",
+        "trace-analysis",
         "trace-viewer",
         "trace-visualization"
       ],
@@ -66,16 +67,41 @@ orgs.newOrg('tools.tracecompass', 'eclipse-tracecompass') {
       ],
     },
     orgs.newRepo('tmll') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
       allow_update_branch: false,
+      default_branch: "main",
       delete_branch_on_merge: false,
+      topics+: [
+        "python",
+        "data-science",
+        "machine-learning",
+        "profiling",
+        "trace-compass",
+        "trace",
+        "trace-analysis",
+        "trace-visualization"
+      ],
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "read",
+      },
+      branch_protection_rules: [
+        tc_default_branch_protection_rule('main')
+      ],
     },
     orgs.newRepo('trace-event-logger') {
       allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "main",
       delete_branch_on_merge: false,
+      topics+: [
+        "java",
+        "profiling",
+        "trace-compass",
+        "trace",
+        "tracing",
+        "trace-event"
+      ],      
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "read",
